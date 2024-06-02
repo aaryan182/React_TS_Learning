@@ -1,4 +1,6 @@
 import "./App.css";
+import { Private } from "./components/auth/Private";
+import { Profile } from "./components/auth/Profile";
 import { Counter } from "./components/class/Counter";
 
 
@@ -42,7 +44,8 @@ function App() {
     {/* <UserContextProvider>
       <User />
     </UserContextProvider> */}
-    <Counter message="The count value is" />
+    {/* <Counter message="The count value is" /> */}
+    <Private isLoggedIn={true} component={Profile} />
   </div>
 }
 

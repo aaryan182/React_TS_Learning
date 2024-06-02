@@ -1,6 +1,6 @@
 import "./App.css";
-import { UserContextProvider } from "./components/context/UserContext";
-import { User } from "./components/context/User";
+import { Counter } from "./components/class/Counter";
+
 
 function App() {
   // const personName = {
@@ -39,9 +39,10 @@ function App() {
     {/* <ThemeContextProvider>
       <Box />
     </ThemeContextProvider> */}
-    <UserContextProvider>
+    {/* <UserContextProvider>
       <User />
-    </UserContextProvider>
+    </UserContextProvider> */}
+    <Counter message="The count value is" />
   </div>
 }
 

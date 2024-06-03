@@ -1,7 +1,5 @@
 import "./App.css";
-import { List } from "./components/generics/List";
-import { RandomNumber } from "./components/restriction/RandomNumber";
-import { Toast } from "./components/templateLiterals/Toast";
+import { CustomButton } from "./components/html/Button";
 
 function App() {
   // const personName = {
@@ -60,7 +58,10 @@ function App() {
         onclick={(item) => console.log(item)}
       /> */}
       {/* <RandomNumber value={10} isPositive/> */}
-      <Toast position="left-bottom" />
+      {/* <Toast position="left-bottom" /> */}
+      <CustomButton variant="primary" onClick={() => console.log("clicked")}>
+        Primary Button
+      </CustomButton>
     </div>
   );
 }

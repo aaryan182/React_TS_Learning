@@ -1,5 +1,6 @@
 import "./App.css";
 import { List } from "./components/generics/List";
+import { RandomNumber } from "./components/restriction/RandomNumber";
 
 function App() {
   // const personName = {
@@ -44,7 +45,7 @@ function App() {
     </UserContextProvider> */}
       {/* <Counter message="The count value is" /> */}
       {/* <Private isLoggedIn={true} component={Profile} /> */}
-      <List
+      {/* <List
         items={["Aaryan", "Rohit", "Riyan"]}
         onclick={(item) => console.log(item)}
       />
@@ -56,7 +57,8 @@ function App() {
           { firstName: "Riyan", lastName: "Sharma" },
         ]}
         onclick={(item) => console.log(item)}
-      />
+      /> */}
+      <RandomNumber value={10} isPositive/>
     </div>
   );
 }

@@ -1,6 +1,7 @@
 import "./App.css";
 import { List } from "./components/generics/List";
 import { RandomNumber } from "./components/restriction/RandomNumber";
+import { Toast } from "./components/templateLiterals/Toast";
 
 function App() {
   // const personName = {
@@ -58,7 +59,8 @@ function App() {
         ]}
         onclick={(item) => console.log(item)}
       /> */}
-      <RandomNumber value={10} isPositive/>
+      {/* <RandomNumber value={10} isPositive/> */}
+      <Toast position="left-bottom" />
     </div>
   );
 }

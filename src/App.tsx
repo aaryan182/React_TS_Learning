@@ -1,5 +1,6 @@
 import "./App.css";
-import { CustomButton } from "./components/html/Button";
+import { Text } from "./components/polymorphic/Text";
+
 
 function App() {
   // const personName = {
@@ -59,9 +60,18 @@ function App() {
       /> */}
       {/* <RandomNumber value={10} isPositive/> */}
       {/* <Toast position="left-bottom" /> */}
-      <CustomButton variant="primary" onClick={() => console.log("clicked")}>
+      {/* <CustomButton variant="primary" onClick={() => console.log("clicked")}>
         Primary Button
-      </CustomButton>
+      </CustomButton> */}
+      <Text as= "h1" size="lg" color="secondary">
+        Heading
+      </Text>
+      <Text as= "p" size="lg" color="secondary">
+        Paragraph
+      </Text>
+      <Text as= "label" htmlFor="someId" size="lg" color="secondary">
+        Label
+      </Text>
     </div>
   );
 }
